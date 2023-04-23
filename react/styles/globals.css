@@ -18,5 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: FDF0E9;
+  background: #FDF0E9;
+}
+
+p,h1,h2,h3 {
+  color: #391400;
+}
+
+footer p {
+  color:white;
 }

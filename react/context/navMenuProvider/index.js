@@ -2,39 +2,41 @@ import { useContext,createContext,useReducer } from "react";
 
 const navMenuContext = createContext();
 
-const reducer = () => {
-    
-}
-
 const NavMenuProvider = ({children}) => {
     const menus = [
         {
-            title: "ねこかふぇについて",
+            text: "ねこかふぇについて",
             link: "/"
         },
         {
-            title: "ねこスタッフ紹介",
+            text: "ねこスタッフ紹介",
             link: "/"
         },
         {
-            title: "ブログ",
+            text: "ブログ",
             link: "/"
         },
         {
-            title: "ご利用料金",
+            text: "ご利用料金",
             link: "/"
         },
         {
-            title: "譲渡について",
+            text: "譲渡について",
             link: "/"
         },
-    ]
+]
 
-    const [menu,dispatch] = useReducer(reducer,menus)
+const menuText = (bool) => {
+    const headerMenu = ["About","Cats","Blog","Price","Adopt"]
+    const newMenus = menus
+    return newMenus.map((menu,i)=> {
+        return bool ? {...menu, text:headerMenu[i]} : {...menu}
+    })
+}
 
     return  (
-        <navMenuContext.Provider value={menus}>
-            {children}
+        <navMenuContext.Provider value={menuText}>
+                {children}
         </navMenuContext.Provider>
     )
 }
