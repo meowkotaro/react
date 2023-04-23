@@ -4,9 +4,13 @@ import {
     Button,
     HStack
  } from "@chakra-ui/react"
+ import { useNavMenu } from "@/context/navMenuProvider"
+import Link from "next/link";
 
 export default function HeaderMenu() {
-    const headerList = ["About","Cats","Price","Blog","Adopt"]
+    const menus = useNavMenu();
+    const headerMenu = menus(true)
+    
 
     return(
         <HStack gap="40px">
@@ -18,9 +22,11 @@ export default function HeaderMenu() {
             listStyleType="none"
             flexDirection={{base: "column",md: "row"}}
             gap={{base:"20px",md:"40px"}}>
-                {headerList.map(list => {
+                {headerMenu.map(({text,link}) => {
                     return(
-                        <ListItem key={list} display="block">{list}</ListItem>
+                        <ListItem key={text} display="block">
+                            <Link href={link}>{text}</Link>
+                        </ListItem>
                     )
                 })}
             </UnorderedList>
