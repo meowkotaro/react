@@ -1,4 +1,8 @@
-import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import Link from "next/link";
+import MainContent from "./mainContent";
+import CatsList from "./catsList";
+import BlogList from "./blogList";
 
 export default function MainLayout() {
     return(
@@ -16,7 +20,7 @@ export default function MainLayout() {
                     color="#EF6D58"
                     fontWeight="normal"
                     pb={5}>
-                        About
+                        ABOUT
                     </Heading>
                     <Heading
                     pb={5}>
@@ -28,6 +32,12 @@ export default function MainLayout() {
                     </Text>
                 </VStack>
             </Box>
+            <MainContent headingText={{sm:"CATS",lg:"猫スタッフ紹介"}} buttonText={"猫スタッフ一覧"} bgColor={"#CED5E4"}>
+                <CatsList/>
+            </MainContent>
+            <MainContent headingText={{sm:"BLOG",lg:"ブログ"}} buttonText={"もっと見る"} bgColor={"#FDF0E9"}>
+                <BlogList/>
+            </MainContent>
         </Box>
     )
 }
