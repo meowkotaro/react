@@ -1,5 +1,7 @@
 import { Box,HStack,Heading,Button,VStack } from "@chakra-ui/react"
 import Link from "next/link"
+import HeadLayout from "../item/headLayout"
+
 
 export default function MainContent({ children,headingText,buttonText,bgColor }) {
     return(
@@ -13,19 +15,7 @@ export default function MainContent({ children,headingText,buttonText,bgColor })
         w="70%"
         pt={20}
         justifyContent="space-between">
-            <VStack
-            alignItems="flex-start">
-                <Heading
-                size="md"
-                color="#EF6D58"
-                fontWeight="normal">
-                    {headingText.sm}
-                </Heading>
-                <Heading
-                size="lg">
-                    {headingText.lg}
-                </Heading>
-            </VStack>
+            <HeadLayout headingText={headingText}/>
             <Link href="/">
                 <Button
                 variant="outline"

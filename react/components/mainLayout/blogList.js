@@ -1,36 +1,22 @@
-import { Box, HStack } from "@chakra-ui/react";
+import { useState,useEffect } from "react";
+import { HStack } from "@chakra-ui/react";
+import Blog from "./blog";
 
 export default function BlogList() {
+
+    // const [ blogData,setBlogData ] = useState([])
+    // useEffect(()=>{
+    // })
+
     return (
         <HStack
         w="70%"
         m="0 auto"
         mt={20}
         justifyContent="space-around">
-            <Box
-            overflow="hidden"
-            w="300px"
-            h="500px"
-            bgColor="#CED5E4"
-            borderRadius="10px">
-                
-            </Box>
-            <Box
-            overflow="hidden"
-            w="300px"
-            h="500px"
-            bgColor="#CED5E4"
-            borderRadius="10px">
-
-            </Box>
-            <Box
-            overflow="hidden"
-            w="300px"
-            h="500px"
-            bgColor="#CED5E4"
-            borderRadius="10px">
-
-            </Box>
+            <Blog/>
+            <Blog/>
+            <Blog/>
         </HStack>
     )
 }

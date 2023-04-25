@@ -1,141 +1,21 @@
-import { HStack,Box,Image,Text,Heading } from "@chakra-ui/react"
+import { HStack } from "@chakra-ui/react"
+import Cat from "./cat"
+import { useState,useEffect } from "react"
 
 export default function CatsList() {
+
+    // const [ blogData,setBlogData ] = useState([])
+    // useEffect(()=>{
+    // })
+
     return (
         <HStack
-                w="100%"
-                mt={20}
-                wrap="nowrap">
-
-            <Box
-            display="flex"
-            alignItems="center"
-            m="0 !important"
-            w="34%"
-            h="600px"
-            border="1px solid #391400">
-                <Box
-                position="relative"
-                overflow="hidden"
-                m="0 auto"
-                w="95%"
-                h="95%"
-                >
-                    <Image src="/cat-img0.jpg" alt=""
-                    objectFit="cover"
-                    w="100%"
-                    h="100%"
-                    zIndex="0"
-                    />
-                    <Box
-                    position="absolute"
-                    bgColor="blackAlpha.400"
-                    w="100%"
-                    h="100%"
-                    top="0"
-                    left="0"
-                    zIndex="1">
-                    </Box>
-                    <Box
-                    position="absolute"
-                    bottom="10%"
-                    left="10%"
-                    zIndex="2">
-                        <Text
-                        bgColor="white"
-                        borderRadius="full"
-                        textAlign="center">メインクーン</Text>
-                        <Heading
-                        color="white">ファボリ</Heading>
-                    </Box>
-                </Box>
-            </Box>
-            <Box
-            display="flex"
-            alignItems="center"
-            m="0 !important"
-            w="34%"
-            h="600px"
-            border="1px solid #391400">
-                <Box
-                position="relative"
-                overflow="hidden"
-                m="0 auto"
-                w="95%"
-                h="95%"
-                >
-                    <Image src="/cat-img0.jpg" alt=""
-                    objectFit="cover"
-                    w="100%"
-                    h="100%"
-                    zIndex="0"
-                    />
-                    <Box
-                    position="absolute"
-                    bgColor="blackAlpha.400"
-                    w="100%"
-                    h="100%"
-                    top="0"
-                    left="0"
-                    zIndex="1">
-                    </Box>
-                    <Box
-                    position="absolute"
-                    bottom="10%"
-                    left="10%"
-                    zIndex="2">
-                        <Text
-                        bgColor="white"
-                        borderRadius="full"
-                        textAlign="center">メインクーン</Text>
-                        <Heading
-                        color="white">ファボリ</Heading>
-                    </Box>
-                </Box>
-            </Box>
-            <Box
-            display="flex"
-            alignItems="center"
-            m="0 !important"
-            w="34%"
-            h="600px"
-            border="1px solid #391400">
-                <Box
-                position="relative"
-                overflow="hidden"
-                m="0 auto"
-                w="95%"
-                h="95%"
-                >
-                    <Image src="/cat-img0.jpg" alt=""
-                    objectFit="cover"
-                    w="100%"
-                    h="100%"
-                    zIndex="0"
-                    />
-                    <Box
-                    position="absolute"
-                    bgColor="blackAlpha.400"
-                    w="100%"
-                    h="100%"
-                    top="0"
-                    left="0"
-                    zIndex="1">
-                    </Box>
-                    <Box
-                    position="absolute"
-                    bottom="10%"
-                    left="10%"
-                    zIndex="2">
-                        <Text
-                        bgColor="white"
-                        borderRadius="full"
-                        textAlign="center">メインクーン</Text>
-                        <Heading
-                        color="white">ファボリ</Heading>
-                    </Box>
-                </Box>
-            </Box>
+        w="100%"
+        mt={20}
+        wrap="nowrap">
+            <Cat/>
+            <Cat/>
+            <Cat/>
         </HStack>
     )
 }

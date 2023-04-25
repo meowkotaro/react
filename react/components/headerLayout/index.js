@@ -14,7 +14,7 @@ export default function headerLayout() {
         <Box
         position="relative"
         height={880}
-        bgImage="url(/header-bg-img.jpg)"
+        bgImage="url(/image/header-bg-img.jpg)"
         bgRepeat="no-repeat"
         bgSize="cover"
         >
