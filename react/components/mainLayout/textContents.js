@@ -2,7 +2,7 @@ import { Box,HStack,Text,Button } from "@chakra-ui/react";
 import HeadLayout from "../item/headLayout";
 import Link from "next/link";
 
-export default function TextContents({children,bgcolor,headingText,flexDirection}) {
+export default function TextContents({children,bgcolor,text,headingText,flexDirection}) {
     return (
         <Box
         w="100%"
@@ -20,7 +20,7 @@ export default function TextContents({children,bgcolor,headingText,flexDirection
                     <HeadLayout headingText={headingText}/>
                     <Text
                     p={10}>
-                    ねこかふぇのご利用料金は、時間制となっております。またワンドリンクオーダー制となっているため、併設のカフェの本格的なコーヒーや紅茶を味わいながら、猫たちとゆったり癒しの時間をお寛ぎください。
+                    {text}
                     </Text>
                     <Link href="/">
                         <Button
