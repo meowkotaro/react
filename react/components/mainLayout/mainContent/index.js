@@ -1,6 +1,6 @@
 import { Box,HStack,Heading,Button,VStack } from "@chakra-ui/react"
 import Link from "next/link"
-import HeadLayout from "../item/headLayout"
+import HeadLayout from "../../item/headLayout"
 
 
 export default function MainContent({ children,headingText,buttonText,bgColor }) {
