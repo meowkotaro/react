@@ -25,9 +25,10 @@ export default function Adopt() {
             h="500px"
             alignItems="center"
             justifyContent="center">
-                {imageURL.map((URL)=> {
+                {imageURL.map((URL,i)=> {
                     return(
                     <Box
+                    key={i}
                     overflow="hidden"
                     w="240px"
                     h="240px">

@@ -3,7 +3,7 @@ import Link from "next/link"
 import HeadLayout from "../../item/headLayout"
 
 
-export default function MainContent({ children,headingText,buttonText,bgColor }) {
+export default function MainContent({ children,headingText,buttonText,bgColor,path }) {
     return(
     <Box
     id="cats"
@@ -16,7 +16,7 @@ export default function MainContent({ children,headingText,buttonText,bgColor })
         pt={20}
         justifyContent="space-between">
             <HeadLayout headingText={headingText}/>
-            <Link href="/">
+            <Link href={path}>
                 <Button
                 variant="outline"
                 colorScheme="#391400"

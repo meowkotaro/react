@@ -1,33 +1,73 @@
 {
-    "user": [
-      {
-        "id": 1,
-        "username": "hoge太郎",
-        "age": 20,
-        "hobbies": [
-          "サッカー",
-          "野球"
-        ],
-        "premiumAccount": true
-      },
-      {
-        "id": 2,
-        "username": "fuga太郎",
-        "age": 17,
-        "hobbies": [
-          "カメラ"
-        ],
-        "premiumAccount": false
-      },
-      {
-        "id": 3,
-        "username": "piyo次郎",
-        "age": 80,
-        "hobbies": [
-          "筋トレ",
-          "水泳"
-        ],
-        "premiumAccount": true
-      }
-    ]
-  }
+  "cats": [
+    {
+      "id": 1,
+      "name": "ファボリ",
+      "birth": "2020年の5月生まれ",
+      "breed": "メインクーン",
+      "imagePath":"/image/cat-img0.jpg",
+      "genderIcon":"/ion_female.svg",
+      "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
+    },
+    {
+      "id": 2,
+      "name": "アニータ",
+      "birth": "2019年の4月生まれ",
+      "breed": "ペルシャ",
+      "imagePath":"/image/cat-img1.jpg",
+      "genderIcon":"/ion_female.svg",
+      "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
+    },
+    {
+      "id": 3,
+      "name": "パンドラ",
+      "birth": "2021年の4月生まれ",
+      "breed": "ソマリ",
+      "imagePath":"/image/cat-img2.jpg",
+      "genderIcon":"/ion_female.svg",
+      "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
+    },
+    {
+      "id": 4,
+      "name": "パンドラ",
+      "birth": "2021年の4月生まれ",
+      "breed": "ソマリ",
+      "imagePath":"/image/cat-img2.jpg",
+      "genderIcon":"/ion_female.svg",
+      "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
+    },
+    {
+      "id": 5,
+      "name": "パンドラ",
+      "birth": "2021年の4月生まれ",
+      "breed": "ソマリ",
+      "imagePath":"/image/cat-img2.jpg",
+      "genderIcon":"/ion_female.svg",
+      "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
+    }
+  ],
+
+  "blog": [
+    {
+      "id": 1,
+      "title": "タイトルテキスト",
+      "date": "2023-04-10",
+      "content": "ここにブログの内容が入ります。ブログにはイベントやキャンペーンのお知らせを書きます。",
+      "imagePath": "/image/blog-image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "期間限定料金",
+      "date": "2023-04-05",
+      "content": "4月10日から二週間、利用料金が10％オフになります。",
+      "imagePath": "/image/blog-image1.jpg"
+    },
+    {
+      "id": 3,
+      "title": "あたらしい仲間が参戦",
+      "date": "2023-04-01",
+      "content": "メインクーンのファボリちゃんが仲間入り、おとなしく人懐っこいです。",
+      "imagePath": "/image/blog-image1.jpg"
+    }
+  ]
+}

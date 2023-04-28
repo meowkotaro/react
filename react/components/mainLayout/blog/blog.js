@@ -1,6 +1,6 @@
 import { Box, VStack, Image, Heading, Text } from "@chakra-ui/react"
 
-export default function Blog() {
+export default function Blog({ title, date, content, imagePath }) {
     return(
         <Box
             overflow="hidden"
@@ -13,17 +13,17 @@ export default function Blog() {
                     <Image
                     w="300px"
                     h="300px"
-                    src="/image/blog-image1.jpg"/>
+                    src={imagePath}/>
                     <Box
                     p={5}>
                         <Heading
                         size="md">
-                        タイトルテキスト
+                        {title}
                         </Heading>
-                        <Text>2023-04-25</Text>
+                        <Text>{date}</Text>
                         <Text
                         pt={2}>
-                        ここにブログの内容が入ります。ブログにはイベントやキャンペーンのお知らせを書きます。
+                        {content}
                         </Text>
                     </Box>
                 </VStack>

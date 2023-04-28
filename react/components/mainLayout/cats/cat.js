@@ -1,6 +1,6 @@
 import { Box, Heading, Text, Image } from "@chakra-ui/react"
 
-export default function Cat() {
+export default function Cat({ name,breed,imagePath }) {
     return(
         <Box
             display="flex"
@@ -16,7 +16,7 @@ export default function Cat() {
                 w="95%"
                 h="95%"
                 >
-                    <Image src="/image/cat-img0.jpg" alt=""
+                    <Image src={imagePath} alt=""
                     objectFit="cover"
                     w="100%"
                     h="100%"
@@ -39,9 +39,9 @@ export default function Cat() {
                         <Text
                         bgColor="white"
                         borderRadius="full"
-                        textAlign="center">メインクーン</Text>
+                        textAlign="center">{breed}</Text>
                         <Heading
-                        color="white">ファボリ</Heading>
+                        color="white">{name}</Heading>
                     </Box>
                 </Box>
             </Box>
