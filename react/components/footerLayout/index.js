@@ -25,9 +25,9 @@ export default function FooterLayout() {
                 <List
                 color="white"
                 lineHeight="8">
-                    {footerMenu.map(({text,link},i) => {
+                    {footerMenu.map(({text,link}) => {
                        return (
-                           <ListItem key={i}>
+                           <ListItem key={text}>
                             <Link href={link}>{text}</Link>
                             </ListItem>
                        )

@@ -1,6 +1,5 @@
-import HeaderLayout from "../components/headerLayout"
-import FooterLayout from '@/components/footerLayout'
 import MainLayout from '@/components/mainLayout'
+import catsApi from './api/cats'
 
 export default function Home() {
   return (
