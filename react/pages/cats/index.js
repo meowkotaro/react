@@ -30,6 +30,7 @@ export default function CatsPage({cats}) {
                 {cats.map((cat)=> {
                     return (
                         <CatList
+                        key={cat.id}
                         id={cat.id}
                         name={cat.name}
                         birth={cat.birth}

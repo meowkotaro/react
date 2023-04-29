@@ -6,7 +6,6 @@ export default function BlogArea() {
         <MainContent 
         headingText={{sm:"BLOG",lg:"ブログ"}} 
         buttonText={"もっと見る"} 
-        bgColor={"#FDF0E9"}
         path={"/blog/"}>
             <BlogList/>
         </MainContent>

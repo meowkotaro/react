@@ -5,6 +5,7 @@
       "name": "ファボリ",
       "birth": "2020年の5月生まれ",
       "breed": "メインクーン",
+      "gender":"女の子",
       "imagePath":"/image/cat-img0.jpg",
       "genderIcon":"/ion_female.svg",
       "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
@@ -14,8 +15,9 @@
       "name": "アニータ",
       "birth": "2019年の4月生まれ",
       "breed": "ペルシャ",
+      "gender":"男の子",
       "imagePath":"/image/cat-img1.jpg",
-      "genderIcon":"/ion_female.svg",
+      "genderIcon":"/ion_male.svg",
       "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
     },
     {
@@ -23,6 +25,7 @@
       "name": "パンドラ",
       "birth": "2021年の4月生まれ",
       "breed": "ソマリ",
+      "gender":"女の子",
       "imagePath":"/image/cat-img2.jpg",
       "genderIcon":"/ion_female.svg",
       "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
@@ -44,6 +47,15 @@
       "imagePath":"/image/cat-img2.jpg",
       "genderIcon":"/ion_female.svg",
       "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
+    },
+    {
+      "id": 6,
+      "name": "パンドラ",
+      "birth": "2021年の4月生まれ",
+      "breed": "ソマリ",
+      "imagePath":"/image/cat-img2.jpg",
+      "genderIcon":"/ion_female.svg",
+      "character": "長毛のキジトラ柄が特徴の女の子。人が大好きで、慣れると膝に乗ったり、顔をスリスリして、たくさん甘えてくれます。"
     }
   ],
 
@@ -59,12 +71,12 @@
       "id": 2,
       "title": "期間限定料金",
       "date": "2023-04-05",
-      "content": "4月10日から二週間、利用料金が10％オフになります。",
+      "content": "4月10日から二週間、利用料金が10%オフになります。",
       "imagePath": "/image/blog-image1.jpg"
     },
     {
       "id": 3,
-      "title": "あたらしい仲間が参戦",
+      "title": "あたらしい仲間が加入",
       "date": "2023-04-01",
       "content": "メインクーンのファボリちゃんが仲間入り、おとなしく人懐っこいです。",
       "imagePath": "/image/blog-image1.jpg"

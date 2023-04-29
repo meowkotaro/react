@@ -10,11 +10,11 @@ const NavMenuProvider = ({children}) => {
         },
         {
             text: "ねこスタッフ紹介",
-            link: "/"
+            link: "/cats"
         },
         {
             text: "ブログ",
-            link: "/"
+            link: "/blog"
         },
         {
             text: "ご利用料金",

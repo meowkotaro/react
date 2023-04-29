@@ -1,10 +1,10 @@
 import axios from "axios"
 
-const ENDPOINT_URL = "http://localhost:3003/blog"
+const ENDPOINT_URL = (id = "") => `http://localhost:3003/blog/${id}`
 
 const blogApi = {
-    async getAll() {
-        const result = await axios.get(ENDPOINT_URL)
+    async getAll(id) {
+        const result = await axios.get(ENDPOINT_URL(id))
         return result.data
     }
 }
