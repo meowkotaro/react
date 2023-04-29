@@ -15,7 +15,7 @@ export default function CatList({id,name,birth,imagePath,genderIcon,character}) 
             display="grid"
             gridTemplateColumns="200px 400px"
             gridTemplateRows="75px 125px"
-            gap="0 20px"
+            gap="0 20px" 
             justifyContent="center">
                 <Box
                 overflow="hidden"
