@@ -16,7 +16,8 @@ export default function Cat({ name,breed,imagePath }) {
                 w="95%"
                 h="95%"
                 >
-                    <Image src={imagePath} alt=""
+                    <Image src={imagePath} 
+                    alt={name}
                     objectFit="cover"
                     w="100%"
                     h="100%"

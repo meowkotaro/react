@@ -30,7 +30,8 @@ export default function Prices() {
                     w="100%"
                     h="100%"
                     objectFit="cover"
-                    src="/image/price-image.jpg"/>
+                    src="/image/price-image.jpg"
+                    alt="PRICES"/>
                 </Box>
             </Box>
         </TextContents>

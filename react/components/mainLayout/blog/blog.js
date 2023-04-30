@@ -13,7 +13,8 @@ export default function Blog({ title, date, content, imagePath }) {
                     <Image
                     w="300px"
                     h="300px"
-                    src={imagePath}/>
+                    src={imagePath}
+                    alt={title}/>
                     <Box
                     p={5}>
                         <Heading
