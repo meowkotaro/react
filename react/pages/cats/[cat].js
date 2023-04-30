@@ -1,5 +1,5 @@
 import { Box, Grid, GridItem, Text, Heading, Image, HStack, VStack } from "@chakra-ui/react"
-import catsApi from "../api/cats"
+import catsApi from "../../db/cats"
 import { useRouter } from "next/router"
 
 export default function CatPage({cat}) {
@@ -61,6 +61,7 @@ export default function CatPage({cat}) {
                     w="100%"
                     h="100%"
                     src={cat.imagePath}
+                    alt={cat.name}
                     objectFit="cover"/>
                 </GridItem>
 
@@ -107,7 +108,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const catData = await catsApi.getAll(params.cat)
-    console.log(catData)
+    // console.log(catData)
     return {
         props: {
             cat: catData

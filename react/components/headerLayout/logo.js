@@ -6,7 +6,7 @@ export default function Logo() {
         <Link
         href="/">
             <HStack>
-                <Image src="/header-icon.svg"></Image>
+                <Image src="/header-icon.svg" alt="logo"></Image>
                 <Heading display="inline-block" color="white">ねこかふぇ</Heading>
             </HStack>
         </Link>

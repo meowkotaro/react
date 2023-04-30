@@ -1,6 +1,6 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import catsApi from "../api/cats"
+import catsApi from "../../db/cats"
 import CatList from "@/components/catsPage/catList";
 
 export default function CatsPage({cats}) {
@@ -46,7 +46,7 @@ export default function CatsPage({cats}) {
 
 export async function getStaticProps() {
     const catsData = await catsApi.getAll()
-    console.log(catsData)
+    // console.log(catsData)
     return {
         props: {
             cats: catsData

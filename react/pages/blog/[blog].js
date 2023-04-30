@@ -1,7 +1,18 @@
 import { Box, HStack, Heading, Text, VStack, Image } from "@chakra-ui/react"
-import blogApi from "../api/blog"
+import { useRouter } from "next/router"
+import blogApi from "@/db/blog"
+// import axios from "axios"
+
+// const ENDPOINT_URL = `${process.env.NEXT_PUBLIC_JSOU_SERVER}/blog`
+
 
 export default function BlogPage({blog}) {
+    console.log(blog)
+
+    const router = useRouter()
+    if(router.isFallback) {
+        return <h3>読み込み中....</h3>
+    }
     return (
         <Box
         w="100%">
@@ -27,6 +38,7 @@ export default function BlogPage({blog}) {
                 <VStack>
                     <Image
                     src={blog.imagePath}
+                    alt={blog.title}
                     w="500px"
                     h="500px"
                     mb="50px"/>
@@ -43,10 +55,10 @@ export default function BlogPage({blog}) {
 }
 
 export async function getStaticPaths() {
+    
+    // const result = await axios.get(ENDPOINT_URL).then((res)=> res.data)
     const result = await blogApi.getAll()
-
     if(!result) return
-
     const paths = result.map((res) => ({ params: {blog: `${res.id}`} }))
 
     return {
@@ -55,11 +67,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const blogData = await blogApi.getAll(params.blog)
-    console.log(blogData)
+    
+    // const result = await axios.get(`${ENDPOINT_URL}/${params.blog}`).then(res => res.data)
+    const result = await blogApi.getAll( params.blog )
+
+    // console.log("getStaticProps")
+    // console.log(result)
     return {
         props: {
-            blog: blogData
+            blog: result
         }
     }
 }

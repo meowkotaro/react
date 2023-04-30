@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { HStack } from "@chakra-ui/react";
 import Blog from "./blog";
-import blogApi from "@/pages/api/blog";
+import blogApi from "@/db/blog";
 
 export default function BlogList() {
 

@@ -33,7 +33,8 @@ export default function Adopt() {
                     w="240px"
                     h="240px">
                         <Image
-                        src={URL.image}/>
+                        src={URL.image}
+                        alt="Adopt"/>
                     </Box>
                     )
                 })}

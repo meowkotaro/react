@@ -1,6 +1,7 @@
 import axios from "axios"
 
-const ENDPOINT_URL = (id = "") => `http://localhost:3003/cats/${id}`
+const ENDPOINT_URL = (id = "") => `${process.env.NEXT_PUBLIC_JSOU_SERVER}/cats/${id}`
+// const ENDPOINT_URL = (id = "") => `http://localhost:3003/cats/${id}`
 
 const catsApi = {
     async getAll(id) {

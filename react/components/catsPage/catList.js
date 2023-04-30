@@ -25,6 +25,7 @@ export default function CatList({id,name,birth,imagePath,genderIcon,character}) 
                 gridRowEnd="3">
                     <Image
                     src={imagePath}
+                    alt={name}
                     w="100%"
                     h="100%"
                     objectFit="cover"/>
@@ -37,7 +38,8 @@ export default function CatList({id,name,birth,imagePath,genderIcon,character}) 
                     <Text
                     fontSize="2xl">{name}</Text>
                     <Image
-                    src={genderIcon}/>
+                    src={genderIcon}
+                    alt={name}/>
                     <Text
                     fontSize="lg">{birth}</Text>
                 </Box>

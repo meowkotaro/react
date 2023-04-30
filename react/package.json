@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "npx concurrently \"npm run dev:cliant\" \"npm run json-server\"",
-    "dev:cliant": "next dev",
+    "dev:cliant": "next dev -p 3005",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3010",
     "lint": "next lint",
+    "export": "next export",
     "json-server": "npx json-server -w ./db/db.json -p 3003"
   },
   "dependencies": {

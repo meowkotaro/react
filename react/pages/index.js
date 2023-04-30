@@ -1,5 +1,5 @@
 import MainLayout from '@/components/mainLayout'
-import catsApi from './api/cats'
+import catsApi from '../db/cats'
 
 export default function Home() {
   return (

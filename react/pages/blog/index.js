@@ -1,6 +1,6 @@
-import { Box, Flex, HStack, Heading, Text, Image, Center } from "@chakra-ui/react";
+import { Box, Flex, HStack, Heading, Text, Image, } from "@chakra-ui/react";
 import Link from "next/link";
-import blogApi from "../api/blog";
+import blogApi from "../../db/blog";
 
 export default function BlogListPage({blogs}) {
     return (
@@ -45,6 +45,7 @@ export default function BlogListPage({blogs}) {
                                     h="400px"
                                     m="0 auto"
                                     src={blog.imagePath}
+                                    alt={blog.title}
                                     objectFit="cover"/>
 
                                     <Heading

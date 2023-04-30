@@ -1,7 +1,7 @@
 import { HStack } from "@chakra-ui/react"
 import Cat from "./cat"
 import { useState,useEffect } from "react"
-import catsApi from "@/pages/api/cats"
+import catsApi from "@/db/cats"
 
 export default function CatsList() {
 
